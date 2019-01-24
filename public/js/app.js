@@ -36381,12 +36381,9 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _route__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./route */ "./resources/js/route.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -36416,10 +36413,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // window
 // const app = new Vue({
 //     el: '#app'
 // });
-
-
-
-console.log(Object(_route__WEBPACK_IMPORTED_MODULE_0__["default"])('test', [34]));
 
 /***/ }),
 
@@ -36478,44 +36471,6 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/route.js":
-/*!*******************************!*\
-  !*** ./resources/js/route.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var routes = __webpack_require__(/*! ./routes.json */ "./resources/js/routes.json"); // route('home',['1'])
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  var args = Array.prototype.slice.call(arguments);
-  var name = args.shift();
-
-  if (routes[name] === undefined) {
-    console.log('Error. Undefined route name');
-  } else {
-    return '/' + routes[name].split('/').map(function (str) {
-      return str[0] == '{' ? args.shift() : str;
-    }).join('/');
-  }
-});
-
-/***/ }),
-
-/***/ "./resources/js/routes.json":
-/*!**********************************!*\
-  !*** ./resources/js/routes.json ***!
-  \**********************************/
-/*! exports provided: , alpha, beta, test, default */
-/***/ (function(module) {
-
-module.exports = {"":"/","alpha":"alpha","beta":"beta","test":"login/{id}"};
 
 /***/ }),
 

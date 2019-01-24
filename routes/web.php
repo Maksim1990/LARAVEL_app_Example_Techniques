@@ -11,11 +11,15 @@
 |
 */
 
+use Illuminate\Support\Facades\Log;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/alpha', function () {
+    Log::info('User failed to login.', ['id' => 1]);
+    abort(401);
     return view('alpha');
 })->name('alpha');
 

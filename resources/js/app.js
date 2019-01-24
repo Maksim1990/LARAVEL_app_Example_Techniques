@@ -31,6 +31,3 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
-
-import route from './route';
-console.log(route('test',[34]));
